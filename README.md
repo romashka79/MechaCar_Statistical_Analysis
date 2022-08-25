@@ -1,24 +1,35 @@
 # MechaCar_Statistical_Analysis
 
-## Linear Regression to Predict MPG
+The upper management of the company has requested a review of production data to gain insights into the cause of production troubles suffered by the manufactoring team.  
 
-write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+## Linear Regression to Predict MPG
 
 ![Linear_regression](Resources/Linear_regression.png).
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
+  Ground_clearance and vehicle_length are the coefficients that provided a non-random amount of variance.
+
 Is the slope of the linear model considered to be zero? Why or why not?
+
+  There is a positive correlation between all variables/coefficients. As seen in the image above, all coefficients are non-zero, therefore, the slope of     the linear model cannot be zero.  
+
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-## Summary Statistics on Suspension Coils
+  R-square is 0.71 (71%) shows a strong correlation of the model and dataset, thus, the linear model is fairly efficient to predict MPG of MechaCar         
+  prototypes.
+  
 
-write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+## Summary Statistics on Suspension Coils
 
 ![total_summary](Resources/total_summary.png)
 
 ![Lot_summary](Resources/Lot_summary.png).
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+The variance of the suspension coils for all manufactoring lots in total is 62 and within the design specifications. Looking at the individual lots, Lot1 and Lot2 are within the requirements, 0.98 & 7.47, respectively. Lot3 is well above the variance specifictations at 170.29 psi and serves as a large contibuter to the variance.  
+
 
 ## T-Tests on Suspension Coils
 
@@ -27,7 +38,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ![Lot_1_2](Resources/Lot_1_2.png).
 
 ![Lot_3](Resources/Lot_3.png).
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
 
 ## Study Design: MechaCar vs Competition
 
