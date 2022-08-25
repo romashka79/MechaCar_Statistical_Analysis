@@ -28,3 +28,17 @@ View(total_summary)
 # using group_by()
 lot_summary <- Suspention_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI),Median = median(PSI), Variance = var(PSI), SD = sd(PSI) , .groups = 'keep')
 View(lot_summary)
+
+# DELIVERABLE 3
+
+# t-Test the lots, pop mu = 1,500psi
+t.test(Suspension_Coil$PSI,mu=mean(Suspension_Coil$PSI))
+
+# t-Test with subset function for lot 1
+t.test(subset(Suspension_Coil$PSI,Suspension_Coil$Manufacturing_Lot == "Lot1"),mu=mean(Suspension_Coil$PSI))
+
+# t-Test with subset function for lot 2
+t.test(subset(Suspension_Coil$PSI,Suspension_Coil$Manufacturing_Lot == "Lot2"),mu=mean(Suspension_Coil$PSI))
+
+# t-Test with subset function for lot 3
+t.test(subset(Suspension_Coil$PSI,Suspension_Coil$Manufacturing_Lot == "Lot3"),mu=mean(Suspension_Coil$PSI))
