@@ -33,18 +33,36 @@ The variance of the suspension coils for all manufactoring lots in total is 62 a
 
 ## T-Tests on Suspension Coils
 
+### t-Test for All Lots, pop mu = 1,500 psi
+
+All Manufacturing Lots: p-value = 0.6028, alpha = 0.05 The total manufacturing lot is 0.60 > 0.05 and not statistically significant from the normal distribution. This means normality can be assumed. The mean falls within the 95% confidence interval.
+
 ![All_lots](Resources/All_lots.png).
+
+### t-Test for Lot 1 & Lot 2
+
+Lot 1: p-value = 1, alpha = 0.05 Lot 1 is 1 > 0.05, and not statistically significant from the normal distribution. This means normality can be assumed. The mean falls within the 95% confidence interval.
+
+Lot 2: p-value = 0.6072, alpha = 0.05 Lot 2 is 0.60 > 0.05, and not statistically significant from the normal distribution. This means normality can be assumed. The mean falls within the 95% confidence interval.
 
 ![Lot_1_2](Resources/Lot_1_2.png).
 
+### t-Test for Lot 3
+
+Lot 3: p-value = 0.04168, alpha =0 .05 Lot 3 is 0.04 < 0.05, and it is statistically significant from the normal distribution. This means normality cannot be assumed. Although, the mean does fall within the 95% confidence interval.
+
 ![Lot_3](Resources/Lot_3.png).
 
+After performing t-tests on the manufacturing lots we can see that the t-test for all lots shows no statistical difference from the population mean of 1500 PSI based on the p-value. The same is true for lots 1 and 2 individually. When we look at lot 3 however, we see there is a statistical difference based on the p-value of less than 0.05.
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+### Metric to test:
+To narrow down the test, we should evaluate MechaCar's carrying capacity in cubic inches in comparisson to competitor's vehicles as consumers take into consideration the capacity of the vehicle when purchasing.
+
+### Null and Alternate Hypothesis:
+MechaCar's prototype's mean capacity is similar to competitors and in the same vehicle class
+MechaChar prototype's mean capacity is statistically above or below competitor vehicles.
+
+### Statistical test used:
+The best for this would be two t-tests on average carrying capacity data in cubic inches.
